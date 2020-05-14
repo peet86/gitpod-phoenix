@@ -2,6 +2,7 @@ image:
   file: gitpod/.gitpod.dockerfile
 ports:
   - port: 4000
+    onOpen: open-preview 
 tasks:
   - name: Frontend
     init: gitpod/init-frontend.sh

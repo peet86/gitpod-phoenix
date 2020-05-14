@@ -7,6 +7,6 @@ psql --command "CREATE USER postgres WITH SUPERUSER PASSWORD 'postgres';"
 mix archive.install hex phx_new --force
 
 # new hello 
-mix phx.new hello --force
+echo yes | mix phx.new hello
 cd hello 
-mix ecto.create --force
+echo yes | mix ecto.create 
