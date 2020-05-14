@@ -22,5 +22,6 @@ if [[ -z "${PHX_APP}" ]]; then
         iex -S mix phx.server
     fi
 else
-    ex -S mix $PHX_APP/phx.server
+    cd $PHX_APP
+    iex -S mix phx.server
 fi
