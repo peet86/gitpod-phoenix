@@ -1,5 +1,7 @@
 #!/bin/bash
 
+eval $(gp env -e) 
+
 if [[ -z "${PHX_APP}" ]]; then
     read -p "Do you want to bootstrap a new phoneix app [Y/n]? " -n 1 -r
     echo   
