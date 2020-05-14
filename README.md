@@ -10,7 +10,8 @@ The  setup takes care about the installation of Erlang/Elxiir, Postgres and all 
 ### How-to:
 
 1. Fork this repo
-2. Spin up your gitpod workspace from the forked repo: https://gitpod.io#https://github.com/*[your-username]*/gitpod-phoenix
+2. Spin up your gitpod workspace from the forked repo: 
+  ```https://gitpod.io#https://github.com/*[your-username]*/gitpod-phoenix```
 3. Follow the instructions in the CLI.
 4. Enjoy! 
 
