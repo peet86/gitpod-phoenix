@@ -14,6 +14,9 @@ if [[ -z "${PHX_APP}" ]]; then
         gp env PHX_APP=$app_name
         eval $(gp env -e) 
 
+        # editor config
+        echo "{ \"elixir.projectPath\": \"/${app_name}\" }" >> .vscode/settings.json
+
         # get phx new
         mix archive.install hex phx_new --force
 
