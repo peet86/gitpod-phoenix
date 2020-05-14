@@ -4,11 +4,9 @@ ports:
   - port: 4000
     onOpen: open-preview 
 tasks:
-  - name: Frontend
-    init: gitpod/init-frontend.sh
   - name: Phx
     init: gitpod/init.sh
-    command: iex -S mix phx.server
+    command: gitpod/start.sh
 vscode:
   extensions:
     - JakeBecker.elixir-ls@0.2.25:X1tqg5Hmluq055QJpf0/7A==
