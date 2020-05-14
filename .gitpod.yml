@@ -1,0 +1,11 @@
+image:
+  file: .gitpod.dockerfile
+ports:
+  - port: 4000
+tasks:
+  - before: mix deps.get
+    init: psql --command "CREATE USER postgres WITH SUPERUSER PASSWORD 'postgres';" && cd /workspace/rumbl/assets && npm install && node node_modules/webpack/bin/webpack.js --mode development && cd /workspace/rumbl && mix ecto.create
+    command: mix ecto.migrate && mix run priv/repo/seeds.exs && iex -S mix phx.server
+vscode:
+  extensions:
+    - JakeBecker.elixir-ls@0.2.25:X1tqg5Hmluq055QJpf0/7A==
