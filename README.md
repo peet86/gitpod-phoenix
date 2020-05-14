@@ -1,18 +1,22 @@
-# [Gitpod] Phoenix Web Framework Starter Kit 
+# Phoenix Web Framework Starter Kit for Gitpod
 
-gitpod-elixir-phoenix is an optimized setup for https://gitpod.io workspace
+**gitpod-phoenix** is an optimized setup for https://gitpod.io workspace.
+
+This zero effort setup takes care about the installation of Erlang, Elxiir, Postgres and all the stuff you need before you finally can have some fun with Phoneix. 
+
 
 ### How-to:
 
-- Register on https://gitpod.io
-- Fork this repo
-- Spin up your forked gitpod workspace: https://gitpod.io#https://github.com/[your-username]/gitpod-elixir-phoenix
-- Follow the instructions in the cli to bootstrap your phoenix app
+1. Fork this repo
+2. Register on https://gitpod.io
+3. Spin up your gitpod workspace from the forked repo: https://gitpod.io#https://github.com/[your-username]/gitpod-phoenix
+4. Follow the instructions in the cli
+5. Enjoy.
 
-### How it works? 
+### What is this? 
 
-This zero effort setup is an automated version of the official Phoneix Installation and Up and running guides:  
+This setup is an automated version of the official Phoneix Installation and Up and running guides:  
 - https://hexdocs.pm/phoenix/installation.html#content
 - https://hexdocs.pm/phoenix/up_and_running.html#content
 
-It takes care about the installation of Erlang, Elxiir, Postgres and all the stuff you need to go through before finally you can have some fun with Phoneix. 
+Once the setup is done you can run and develop your Phonenix app in your own Gitpod cloud IDE workspace. 
