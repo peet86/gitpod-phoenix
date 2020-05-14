@@ -5,8 +5,8 @@ ports:
 tasks:
   - name: Frontend
     init: gitpod/init-frontend.sh
-  - name: DB
-    init: gitpod/init-db.sh
+  - name: Phx
+    init: gitpod/init.sh
     command: iex -S mix phx.server
 vscode:
   extensions:

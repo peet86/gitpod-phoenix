@@ -10,3 +10,7 @@ RUN apt-get update \
     && mix local.hex --force \
     && mix local.rebar --force \
     && apt-get clean && rm -rf /var/cache/apt/* && rm -rf /var/lib/apt/lists/* && rm -rf /tmp/*
+
+# Allow gitpod group to edit 
+RUN true \
+	&& chown -R root:gitpod /home/gitpod/.mix
