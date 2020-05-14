@@ -2,8 +2,11 @@
 
 #init db
 psql --command "CREATE USER postgres WITH SUPERUSER PASSWORD 'postgres';" 
-mix deps.get
-mix ecto.create
 
-#new phx
+#get phx new
 mix archive.install hex phx_new
+
+# new hello 
+mix phx.new hello
+cd hello 
+mix ecto.create
