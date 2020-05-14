@@ -1,4 +1,4 @@
-# Phoenix Web Framework Starter Kit for Gitpod
+# [Gitpod] Phoenix Web Framework Starter Kit 
 
 gitpod-elixir-phoenix is an optimized setup for https://gitpod.io workspace
 
