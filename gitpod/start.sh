@@ -5,7 +5,7 @@ eval $(gp env -e)
 if [[ -z "${PHX_APP}" ]]; then
     read -p "Do you want to bootstrap a new phoneix app [Y/n]? " -n 1 -r
     echo   
-    if [[ $REPLY =~ ^[Yy]$ ]]
+    if [[ ! $REPLY =~ ^[Nn]$ ]]
     then
         read -p "Choose a name for your app:" app_name
         if [[ -z "${app_name}" ]]; then
